@@ -1,0 +1,153 @@
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0.1;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.2;
+}
+
+.position {
+  display: flex;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0.7;
+  background-color: rgb(96, 184, 74);
+  text-align: center;
+}
+
+.article1 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.4;
+  align-items: center;
+  justify-content: center;
+  background-color: hotpink;
+}
+
+.article2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.4;
+  background-color: lawngreen;
+  align-items: center;
+  justify-content: center;
+}
+
+.fu {
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  border: solid 1px black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.2;
+  background-color: rgb(29, 32, 34);
+}
+
+h1 {
+  font-size: 34px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.fas {
+  font-size: 30px;
+  visibility: collapse;
+}
+
+
+
+@media all and (max-width: 770px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.1;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    height: 0;
+    visibility: collapse;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.7;
+  }
+
+  .article1 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .article2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .fu {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    border: solid 1px black;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.25;
+    background-color: rgb(29, 32, 34);
+  }
+
+  h1 {
+    font-size: 25px;
+    display: flex;
+    flex-grow: 0.9;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fas {
+    font-size: 30px;
+    visibility: visible;
+    display: flex;
+    flex-grow: 0.1;
+    color: rgb(96, 184, 74);
+  }
+}

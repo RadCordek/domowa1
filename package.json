@@ -1,0 +1,23 @@
+{
+  "name": "flex",
+  "version": "1.0.0",
+  "description": "flexbox",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/RadCordek/domowa1.git)"
+  },
+  "author": "RK",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "gulp-group-css-media-queries": "^1.2.2"
+  }
+}
